@@ -17,7 +17,9 @@ Template engine = Dit is een manier om data in verschillende vormen te laten zie
 <br><br>
 Jinja 2 = Dit is de <i>template engine</i> van Python.
 <br><br>
-Json = 
+Json = Dit is een <i>template engine</i> die Python omschrijft naar Javascript.
 <br><br>
 Websocket = 
+<br><br>
+dictionairy python = 
 <br><br>
