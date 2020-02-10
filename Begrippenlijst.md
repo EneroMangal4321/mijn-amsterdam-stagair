@@ -23,3 +23,5 @@ Websocket =
 <br><br>
 dictionairy python = 
 <br><br>
+list python =
+<br><br>

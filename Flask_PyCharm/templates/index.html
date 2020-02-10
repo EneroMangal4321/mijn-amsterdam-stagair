@@ -5,9 +5,9 @@
     <title>Hallo Wereld</title>
 </head>
 <body>
-    {% while i <= 20 %}
-        {{ i }}
-    {% i+=1 %}
+    {% for num in range(0, 11) %}
+        {{ num }} <br>
+    {% endfor %}
 
 </body>
 </html>
