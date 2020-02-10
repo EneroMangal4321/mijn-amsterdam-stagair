@@ -1,2 +1,2 @@
-# Mijn Amsterdam stgair
+# Mijn Amsterdam stagair
 Stage werkzaamheden
