@@ -6,3 +6,9 @@ Functioneel Programmeren = Een model dat zich richt op een hoger niveau van denk
 Markdownfiles = md files die direct aangepast kunnen worden via GitHub.
 <br><br>
 Diffs = Verschillen tussen bestanden.
+<br><br>
+Package Manager = Een package manager is een software tool die het installeren, upgraden, configureren en verwijderen van software op de pc automatiseert 
+<br><br>
+pip =
+<br><br>
+decorator = 
