@@ -15,7 +15,7 @@ decorator = Een decorator is een ontwerppatroon voor objectorientatie.
 <br><br>
 Template engine = Dit is een manier om data in verschillende vormen te laten zien.
 <br><br>
-Jinja 2 = Dit is de <i>template engine</i> van Python.
+Jinja 2 = Dit is de <i>template engine</i> die Python in HTML zet.
 <br><br>
 Json = Dit is een <i>template engine</i> die Python omschrijft naar Javascript.
 <br><br>
@@ -23,5 +23,10 @@ Websocket =
 <br><br>
 dictionairy python = 
 <br><br>
-list python =
+list python = 
 <br><br>
+interpreter system = Je kan de code uitvoeren zodra het is geschreven, dit maakt testen snel.
+<br><br>
+Indentation = De spatie aan het begin van de regels
+<br><br>
+
