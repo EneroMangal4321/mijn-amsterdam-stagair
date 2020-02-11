@@ -23,8 +23,8 @@ Een package manager is een software tool die het installeren, upgraden, configur
 pip is de *package manager* van Python.
 
 
-### decorator 
-Een decorator is een ontwerppatroon voor objectorientatie. ![image](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Decorator_UML_class_diagram.svg/1200px-Decorator_UML_class_diagram.svg.png)
+### Decorator 
+Een decorator is een ontwerppatroon voor objectorientatie. 
 
 
 ### Template engine
@@ -38,13 +38,13 @@ Dit is de *template engine* die Python in HTML zet.
 ### JSON
 Staat voor JavaScript Object Notation. JSON is een programma waar je data mee kan formateren. [Hier](https://en.wikipedia.org/wiki/JSON) meer over JSON.
 
-### dictionairy python 
-Dit is een lijst in een variabele waar informatie in staat.
+### Dictionairy python 
+Dit is een collectie van ongeordende, aanpasbare en geindexeerde informatie. Hier mogen niet prcies dezelfde waardes in zitten.
 
-### list python
-Dit is een lijst in een variabele.
+### List python
+Dit is een geordende lijst waar gelijke waarden toegestaan zijn, binnen een variabele.
 
-### interpreter system
+### Interpreter system
 Je kan de code uitvoeren zodra het is geschreven, dit maakt testen snel.
 
 
@@ -52,7 +52,7 @@ Je kan de code uitvoeren zodra het is geschreven, dit maakt testen snel.
 De spatie aan het begin van de regels. Hiermee is hou je code netjes en gestructureerd. Voor sommige programmeertalen is het cruciaal dat je de juiste indentation gebruikt.
 
 ### TCP
-Staat voor Transmission Control Protocol. Dit protocol wordt gebruikt om een stabiele en veilige verbinding te maken met een webpagina.
+Staat voor Transmission Control Protocol. Dit protocol wordt gebruikt om een stabiele verbinding te maken met een webpagina.
 
 ### WebSocket
 WebSocket zorgt voor de mogelijkheid om een stroom van berichten in webbrowsers en webservers te sturen bovenop een TCP-verbinding. Lees meer over [WebSocket](https://nl.wikipedia.org/wiki/WebSocket).
