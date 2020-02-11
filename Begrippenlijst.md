@@ -32,8 +32,10 @@ Dit is een manier om data in verschillende vormen te laten zien. Zo heb je bijvo
 
 
 ### Jinja 2
-Dit is de *template engine* die Python in HTML zet.
+Dit is een *templating engine* die *Flask* gebruikt om Python in HTML om te zetten.
 
+### Flask
+Dit is een klein framework voor python.
 
 ### JSON
 Staat voor JavaScript Object Notation. JSON is een programma waar je data mee kan formateren. [Hier](https://en.wikipedia.org/wiki/JSON) meer over JSON.
