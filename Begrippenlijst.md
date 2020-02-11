@@ -28,7 +28,7 @@ Een decorator is een ontwerppatroon voor objectorientatie. ![image](https://uplo
 
 
 ### Template engine
-Dit is een manier om data in verschillende vormen te laten zien. Zo heb je bijvoorbeeld [Jinja](https://pypi.org/project/Jinja2/) en [JSON](https://nl.wikipedia.org/wiki/JSON).
+Dit is een manier om data in verschillende vormen te laten zien. Zo heb je bijvoorbeeld [Jinja](https://pypi.org/project/Jinja2/).
 
 
 ### Jinja 2
@@ -37,10 +37,6 @@ Dit is de *template engine* die Python in HTML zet.
 
 ### JSON
 Staat voor JavaScript Object Notation. JSON is een programma waar je data mee kan formateren. [Hier](https://en.wikipedia.org/wiki/JSON) meer over JSON.
-
-
-### Websocket 
-
 
 ### dictionairy python 
 Dit is een lijst in een variabele waar informatie in staat.
@@ -55,4 +51,9 @@ Je kan de code uitvoeren zodra het is geschreven, dit maakt testen snel.
 ### Indentation
 De spatie aan het begin van de regels. Hiermee is hou je code netjes en gestructureerd. Voor sommige programmeertalen is het cruciaal dat je de juiste indentation gebruikt.
 
+### TCP
+Staat voor Transmission Control Protocol. Dit protocol wordt gebruikt om een stabiele en veilige verbinding te maken met een webpagina.
+
+### WebSocket
+WebSocket zorgt voor de mogelijkheid om een stroom van berichten in webbrowsers en webservers te sturen bovenop een TCP-verbinding. Lees meer over [WebSocket](https://nl.wikipedia.org/wiki/WebSocket).
 
