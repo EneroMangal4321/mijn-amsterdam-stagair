@@ -1,6 +1,7 @@
 # Rollen en werkzaamheden van het team.
 
-### Johan
+### Johan Otten
+Johan is de back-end developer van het team. Hij zorgt voor de verbinding met de bronsystemen, deze verbinding maakt hij met rest-api's of soap-api's. De data die nodig is wordt opgehaald, maar is in veel gevallen het verkeerde datatype. Johan formateert deze data naar het goede datatype om het vervolgens door te sturen naar de front-end. Hij schrijft ook tests en zorgt ervoor dat het op de acceptatie komt.
 
 ### Tim
 
