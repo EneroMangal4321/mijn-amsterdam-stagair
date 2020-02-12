@@ -9,5 +9,11 @@ Johan is de back-end developer van het team. Hij zorgt voor de verbinding met de
 
 ### Marian
 
-### Wigge Tenge
-Wigge is een van de product owners, werkt samen met de sociale directies van Amsterdam. Eerst presenteert hij het project waar aan gewerkt wordt. Daarna, in samenwerking met deze sociale directies, bespreekt hij opdrachten die bij het project kunnen toegevoegd. Ook voegt hij stories toe aan de backlog en kijkt of ze klaar zijn om in de volgende sprint gezet te kunnen worden. Wigge reviewt en test samen met andere mensen het product.
+### Wigger Tenge
+Wigger is een van de product owners, werkt samen met de sociale directies van Amsterdam. Eerst presenteert hij het project waar aan gewerkt wordt. Daarna, in samenwerking met deze sociale directies, bespreekt hij opdrachten die bij het project kunnen toegevoegd. Ook voegt hij stories toe aan de backlog en kijkt of ze klaar zijn om in de volgende sprint gezet te kunnen worden. Wigger reviewt en test samen met andere mensen het product.
+
+### Nils Grabinger
+Nils is PMO(Project Manager Office). Hij regelt vele zaken met als voorbeeld financiele zaken, contracten en team zaken. De financiele administratie, uren goedkeuren en in het systeem zetten is ook een van de werkzaamheden die Nils doet. Ook maakt hij veel planningen voor het team en verlengt hij de contracten. Nils 
+
+### Sander 
+Sander informeert wat de gevolgen zijn van de eisen die de business owner stelt aan het project. Als alle eisen zijn vastgesteld, vertaalt Sander de eisen van normaal nederlands naar een soort code taal waar de programmeurs dan mee aan de slag kunnen gaan.
