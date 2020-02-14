@@ -1,4 +1,4 @@
-from flask import Flask, request, json, jsonify
+from flask import Flask, request, json
 
 app = Flask(__name__)
 
@@ -7,29 +7,44 @@ def index():
     action = (request.json['action'])
     num = request.json['values']
     test = request.get_json()
+
     if action == "multiply":
         uitkomst = 1
         for x in num:
             uitkomst = x * uitkomst
+        global U
 
-        O = json.dumps({"result": uitkomst})
-        return O
 
     if action == "subtract":
         uitkomst = 0
+        for index, x in enumerate(num):
+            if index == 0:
+                uitkomst = x
+            else:
+                uitkomst = uitkomst - x
+
+
+    if action == "divide":
+        uitkomst = 0
+        for index, x in enumerate(num):
+            if index == 0:
+                uitkomst = x
+            else:
+                uitkomst = uitkomst / x
+
+        uitkomstInt = int(uitkomst)
+        if uitkomst == uitkomstInt:  
+            uitkomst = uitkomstInt
+
+
+    if action == "add":
+        uitkomst = 0
         for x in num:
-            uitkomst = x - uitkomst
+            uitkomst = uitkomst + x
 
-        O = json.dumps({"result": uitkomst})
-        return O
 
-    if action == "devide":
-        uitkomst = 1
-        for x in num:
-            uitkomst = x / uitkomst
-
-        O = json.dumps({"result": uitkomst})
-        return O
+    U = json.dumps({"result": uitkomst})
+    return U
 
 
 if __name__ == '__name__':
