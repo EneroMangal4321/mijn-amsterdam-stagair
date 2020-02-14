@@ -1,17 +1,17 @@
 # Begrippenlijst
 
-#### API
+### API
 Een middel om programma’s met elkaar te kunnen laten communiceren. (staat voor: Application Programming Interface)
 
 
-#### Functioneel Programmeren
+### Functioneel Programmeren
 Een model dat zich richt op een hoger niveau van denken. Dit model doet berekeningen door middel van functies, het enige wat er toe doet is dat het antwoord goed is. Lees meer op [Wikipedia](https://nl.wikipedia.org/wiki/Functioneel_programmeren).
 
 
-#### Markdown (.md)
+### Markdown (.md)
 Dit is een markuptaal om textfiles te formatteren en vorm te geven. Lees [hier](https://en.wikipedia.org/wiki/Markdown) meer over Markdown.
 
-#### Diffs
+### Diffs
 Met deze diffs kan je de verschillen zien in de files. [Hier](https://en.wikipedia.org/wiki/Diff) kun je meer vinden over diffs.
 
 
