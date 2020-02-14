@@ -33,7 +33,7 @@ def index():
                 uitkomst = uitkomst / x
 
         uitkomstInt = int(uitkomst)
-        if uitkomst == uitkomstInt:  
+        if uitkomst == uitkomstInt:
             uitkomst = uitkomstInt
 
 
