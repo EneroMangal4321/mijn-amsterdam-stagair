@@ -12,8 +12,9 @@ def index():
         for x in num:
             uitkomst = x * uitkomst
 
+
     #U = format(uitkomst)
-    O = json.dumps(uitkomst)
+    O = json.dumps({"result": uitkomst})
     return O
 
 if __name__ == '__name__':
