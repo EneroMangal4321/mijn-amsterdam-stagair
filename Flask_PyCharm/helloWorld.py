@@ -42,8 +42,7 @@ def index():
             uitkomst = uitkomst + x
 
 
-    U = json.dumps({"result": uitkomst})
-    return U
+    return json.dumps({"result": uitkomst})
 
 
 if __name__ == '__name__':
