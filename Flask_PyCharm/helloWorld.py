@@ -12,7 +12,6 @@ def index():
         uitkomst = 1
         for x in num:
             uitkomst = x * uitkomst
-        global U
 
 
     if action == "subtract":
