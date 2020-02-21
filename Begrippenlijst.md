@@ -59,3 +59,5 @@ Staat voor Transmission Control Protocol. Dit protocol wordt gebruikt om een sta
 ### WebSocket
 WebSocket zorgt voor de mogelijkheid om een stroom van berichten in webbrowsers en webservers te sturen bovenop een TCP-verbinding. Lees meer over [WebSocket](https://nl.wikipedia.org/wiki/WebSocket).
 
+### WSGI 
+Staat voor Web Server Gateway Interface. 
