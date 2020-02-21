@@ -1,5 +1,6 @@
 from datetime import date
 import datetime
+import random
 num = [1]
 
 x = 10
@@ -50,3 +51,46 @@ zin = " ".join(woorden)
 print(zin)
 zin1 = "_".join(woorden)
 print(zin1)
+
+for i in num:
+    print(" ")
+
+b = "Hallo Wereld"
+woorden = b.split()
+print(woorden)
+b =  "World,Earth,America,Canada"
+woorden = b.split()
+print(woorden)
+zin = "Hallo allemaal. Ik ben Enero"
+woorden = zin.split(".")
+print(woorden)
+
+for i in num:
+    print(" ")
+
+x = random.randrange(0,100)
+print(x)
+numb = [1,2,3]
+for i in numb:
+    print(random.randrange(0,100))
+from collections import Counter
+numb = []
+for i in range(100):
+    numb.append(random.randrange(0,100))
+counter = Counter(numb)
+print(counter)
+
+for i in num:
+    print(" ")
+
+x = input("what is your phone number? ")
+print("Your number is " + x)
+x = input("what is your preffered programming language? ")
+print("Your preffered programming language is: " + x)
+
+for i in num:
+    print(" ")
+
+clist = ['Canada','USA','Mexico','Australia']
+for i in clist:
+    print(i)
