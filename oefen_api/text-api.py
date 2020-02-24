@@ -1,15 +1,12 @@
-from flask import Flask, json
-import requests
+from flask import Flask, json, request
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
-    return "Flask"
-
+@app.route("/", methods = ["GET"])
 def schrijf_json():
-    text1 = (request.json["key"])
-    text2 = (request.json["value"])
+    x = open("text.json")
+    text = json.loads(x)
+    return text
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
