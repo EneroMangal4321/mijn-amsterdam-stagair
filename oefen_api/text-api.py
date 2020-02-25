@@ -9,7 +9,7 @@ def schrijf_json():
 
     obj = json.loads(data)
     x = json.dumps(obj, sort_keys=False)
-    return str(x)
+    return str(x["name"])
 
 if __name__ == "__main__":
     app.run(debug=True)
