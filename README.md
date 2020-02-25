@@ -1,2 +1,6 @@
 # Mijn Amsterdam stagair
-Stage werkzaamheden
+
+### Stage werkzaamheden
+* Wat doe ik op mijn stage
+* Wat leer ik hier 
+* Waar kan ik diet voor gebruiken
