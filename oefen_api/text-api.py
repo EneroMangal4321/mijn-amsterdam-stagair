@@ -3,7 +3,7 @@ from flask import Flask, json, request
 app = Flask(__name__)
 
 @app.route("/")
-def schrijf_json():
+def json_formatting():
     with open("text.json") as myfile:
         data = myfile.read()
 
