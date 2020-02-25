@@ -8,8 +8,8 @@ def json_formatting():
         data = myfile.read()
 
     obj = json.loads(data)
-    x = json.dumps(obj, sort_keys=False)
-    return str(x["name"])
+    text = json.dumps(obj, sort_keys=False)
+    return str(text["name"])
 
 if __name__ == "__main__":
     app.run(debug=True)
