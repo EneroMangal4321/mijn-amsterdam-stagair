@@ -8,8 +8,8 @@ def schrijf_json():
         data = myfile.read()
 
     obj = json.loads(data)
-
-    return str(obj)
+    x = json.dumps(obj, sort_keys=False)
+    return str(x)
 
 if __name__ == "__main__":
     app.run(debug=True)
