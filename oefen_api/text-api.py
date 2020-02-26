@@ -11,8 +11,6 @@ def json_formatting():
         except KeyError:
             return None
     #hier is ruimte om iets met de inhoud van text.json te doen
-    #text = json.dumps(obj, sort_keys=False)
-    #return json.dumps(data, sort_keys=False)
     return json.dumps(data, sort_keys=False)
 
 if __name__ == "__main__":
