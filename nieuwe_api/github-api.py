@@ -4,11 +4,13 @@ from pprint import pprint
 
 app = Flask(__name__)
 
-@app.route("/username")
+@app.route("/")
 def get_repo():
     username = request.args.get("username")
     repos_url = "https://api.github.com/users/%s/repos" % (username)
     repos_response = requests.get(repos_url)
+    if repos_response.status_code != 200:
+        return "Je hebt een verkeerde gebruikersnaam ingevuld. Vul de goede gebruikersnaam in."
     repos_response_list = repos_response.json()
     item_list = []
 
@@ -18,7 +20,6 @@ def get_repo():
         except:
             return "Je hebt een verkeerde gebruikersnaam ingevuld. Vul de goede gebruikersnaam in."
         commit_response = requests.get(commit_url)
-        print("5")
         commit_response_list = commit_response.json()
         eerste_item = commit_response_list[0]['commit']['message']
 
