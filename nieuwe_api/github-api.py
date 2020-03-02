@@ -1,6 +1,5 @@
 from flask import Flask, json, jsonify, Response, request
 import requests
-from pprint import pprint
 
 app = Flask(__name__)
 
