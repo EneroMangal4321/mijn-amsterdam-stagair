@@ -61,3 +61,6 @@ WebSocket zorgt voor de mogelijkheid om een stroom van berichten in webbrowsers 
 
 #### TMA
 Toegangs Makelaar Amsterdam zorgt ervoor dat wij als amsterdammers kunnen inloggen met digiD. Zorgt voor een veilige connectie tussen 2 clouds, door tussen de 2 clouds te zitten en het in de gaten te houden.
+
+#### Response Headers
+De Response Headers laat informatie zien over de webpagina. Zo kun je bijvoorbeeld zien van wat de inhoud is gemaakt en hoelang het is.
