@@ -9,7 +9,7 @@ def get_repo():
     repos_url = "https://api.github.com/users/%s/repos" % (username)
     repos_response = requests.get(repos_url)
     if repos_response.status_code != 200:
-        return "Je hebt een verkeerde gebruikersnaam ingevuld. Vul de goede gebruikersnaam in."
+        return "Je hebt een niet bestaande gebruikersnaam ingevuld. Vul de goede gebruikersnaam in."
     repos_response_list = repos_response.json()
     item_list = []
 
@@ -31,3 +31,6 @@ def get_repo():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+#Check of er uberhoubt een username is ingevuld met een if statement bovenaan.
+#Verdeel de code in verschillende functies op.
