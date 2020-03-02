@@ -14,10 +14,7 @@ def get_repo():
     item_list = []
 
     for repos_info_response in repos_response_list:
-        try:
-            commit_url = "https://api.github.com/repos/%s/%s/commits" % (username, repos_info_response["name"])
-        except:
-            return "Je hebt een verkeerde gebruikersnaam ingevuld. Vul de goede gebruikersnaam in."
+        commit_url = "https://api.github.com/repos/%s/%s/commits" % (username, repos_info_response["name"])
         commit_response = requests.get(commit_url)
         commit_response_list = commit_response.json()
         eerste_item = commit_response_list[0]['commit']['message']
