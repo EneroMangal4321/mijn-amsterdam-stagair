@@ -43,9 +43,14 @@ def get_last_commit(repo_name, username):
     commit_url = "https://api.github.com/repos/%s/%s/commits" % (username, repo_name)
     commit_response = requests.get(commit_url)
     commit_response_list = commit_response.json()
+    print("dit is", commit_response_list)
+    if commit_response_list:
+        laatste_commit = commit_response_list[0]['commit']['message']
+    else:
+        laatste_commit = "Deze repo heeft geen commits."
 
-    laatste_commit = commit_response_list[0]['commit']['message']
     return laatste_commit
+    
 
 #create a dict from the given information 
 def make_dict(repo_name, laatste_commit):
