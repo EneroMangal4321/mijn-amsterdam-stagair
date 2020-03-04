@@ -1,24 +1,23 @@
 from flask import Flask, json, jsonify, Response, request
 import requests
-import urllib3
 
 app = Flask(__name__)
 
 @app.route("/")
 def check_for_user():
     username = get_username()
-    repos_url = "https://api.github.com/users/%s/repos" % (username)
-    try:
-        repos_response = requests.get(repos_url)
-    except:
-        return "Je hebt een niet bestaande gebruikersnaam ingevuld. Vul de goede gebruikersnaam in."
-    if repos_response.status_code == 200:
-        return show_repos_and_last_commit()
-    return f"FAIL: {repos_response.status_code} {repos_response.content}"
+    repo_output_dict = get_repositories(username)
+    repos_response = repo_output_dict["repos_response"]
+    repos_url = repo_output_dict["repos_url"]
+    repos_response_list = repo_output_dict["repos_response_list"]
 
-def show_repos_and_last_commit():
+    repos_response = requests.get(repos_url)
+    if repos_response.status_code == 200:
+        return show_repos_and_last_commit(repos_response_list)
+    return f"FAIL: {repos_response.status_code}. Vul een geldige gebruiker in."
+
+def show_repos_and_last_commit(repos_response_list):
     username = get_username()
-    repos_response_list = get_repositories(username)
     item_list = []
     for x in repos_response_list:
         naam_repo = x["name"]
@@ -38,7 +37,7 @@ def get_repositories(username):
     repos_response = requests.get(repos_url)
 
     repos_response_list = repos_response.json()
-    return repos_response_list
+    return {"repos_response_list" : repos_response_list, "repos_response" : repos_response, "repos_url" : repos_url}
 
 #get the last commit from the given repository
 def get_last_commit(repo_name, username):
