@@ -5,18 +5,27 @@ import urllib3
 app = Flask(__name__)
 
 @app.route("/")
-def test():
+def check_for_user():
+    username = get_username()
+    repos_url = "https://api.github.com/users/%s/repos" % (username)
+    try:
+        repos_response = requests.get(repos_url)
+    except:
+        return "Je hebt een niet bestaande gebruikersnaam ingevuld. Vul de goede gebruikersnaam in."
+    if repos_response.status_code == 200:
+        return show_repos_and_last_commit()
+    return f"FAIL: {repos_response.status_code} {repos_response.content}"
+
+def show_repos_and_last_commit():
     username = get_username()
     repos_response_list = get_repositories(username)
+    item_list = []
     for x in repos_response_list:
         naam_repo = x["name"]
         laatste_commit = get_last_commit(naam_repo, username)
-        print(naam_repo, laatste_commit)
-        item_list_json = make_json_output(naam_repo, laatste_commit)
-    return output(item_list_json)
-    # last_commit = get_last_commit(repos_response_list, username)
-    # item_list_json = make_json_output(repos_response_list, last_commit)
-    # return output(item_list_json)
+        item = make_dict(naam_repo, laatste_commit)
+        item_list.append(item)
+    return output(item_list)
 
 #get the username from the url
 def get_username():
@@ -27,44 +36,32 @@ def get_username():
 def get_repositories(username):
     repos_url = "https://api.github.com/users/%s/repos" % (username)
     repos_response = requests.get(repos_url)
-    if repos_response.status_code != 200:
-        return "Je hebt een niet bestaande gebruikersnaam ingevuld. Vul de goede gebruikersnaam in."
 
     repos_response_list = repos_response.json()
     return repos_response_list
 
-#get the last commit from all the repositories
+#get the last commit from the given repository
 def get_last_commit(repo_name, username):
     commit_url = "https://api.github.com/repos/%s/%s/commits" % (username, repo_name)
     commit_response = requests.get(commit_url)
     commit_response_list = commit_response.json()
-    
-    laatste_commit = commit_response_list[0]['commit']['message']
-    # print("Dit is een", laatste_commit)
-    return laatste_commit
-    # print("hallo ", repos_response_list)
-    # for repos_info_response in naam:
-    #     commit_url = "https://api.github.com/repos/%s/%s/commits" % (username, repos_info_response["name"])
-    #     commit_response = requests.get(commit_url)
-    #     commit_response_list = commit_response.json()
-    #     eerste_item = commit_response_list[0]['commit']['message']
-    #     return eerste_item
 
-#create a valid json output from the given information 
-def make_json_output(repo_name, laatste_commit):
-    item_list = []
+    laatste_commit = commit_response_list[0]['commit']['message']
+    return laatste_commit
+
+#create a dict from the given information 
+def make_dict(repo_name, laatste_commit):
+
     item = {
             "repository_name": repo_name,
             "last_submitted_commit": laatste_commit
         }
-    item_list.append(item)
-    item_list_json = json.dumps(item_list, sort_keys=False)
-    print(item_list_json)
-    return item_list_json
+    
+    return item
 
-#return repositories and last commits from the repositories of the given github user
-def output(item_list_json):
-    return Response(item_list_json, mimetype='application/json') #jsonify(item_list)
+
+def output(item_list):
+    return jsonify(item_list)
 
 
 
