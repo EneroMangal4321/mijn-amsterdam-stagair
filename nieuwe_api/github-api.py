@@ -8,9 +8,15 @@ app = Flask(__name__)
 def test():
     username = get_username()
     repos_response_list = get_repositories(username)
-    last_commit = get_last_commit(repos_response_list, username)
-    item_list_json = make_json_output(last_commit, eerste_item)
+    for x in repos_response_list:
+        naam_repo = x["name"]
+        laatste_commit = get_last_commit(naam_repo, username)
+        print(naam_repo, laatste_commit)
+        item_list_json = make_json_output(naam_repo, laatste_commit)
     return output(item_list_json)
+    # last_commit = get_last_commit(repos_response_list, username)
+    # item_list_json = make_json_output(repos_response_list, last_commit)
+    # return output(item_list_json)
 
 #get the username from the url
 def get_username():
@@ -28,25 +34,32 @@ def get_repositories(username):
     return repos_response_list
 
 #get the last commit from all the repositories
-def get_last_commit(repos_response_list, username):
-
-    for repos_info_response in repos_response_list:
-        commit_url = "https://api.github.com/repos/%s/%s/commits" % (username, repos_info_response["name"])
-        commit_response = requests.get(commit_url)
-        commit_response_list = commit_response.json()
-        eerste_item = commit_response_list[0]['commit']['message']
-
-    return eerste_item
+def get_last_commit(repo_name, username):
+    commit_url = "https://api.github.com/repos/%s/%s/commits" % (username, repo_name)
+    commit_response = requests.get(commit_url)
+    commit_response_list = commit_response.json()
+    
+    laatste_commit = commit_response_list[0]['commit']['message']
+    # print("Dit is een", laatste_commit)
+    return laatste_commit
+    # print("hallo ", repos_response_list)
+    # for repos_info_response in naam:
+    #     commit_url = "https://api.github.com/repos/%s/%s/commits" % (username, repos_info_response["name"])
+    #     commit_response = requests.get(commit_url)
+    #     commit_response_list = commit_response.json()
+    #     eerste_item = commit_response_list[0]['commit']['message']
+    #     return eerste_item
 
 #create a valid json output from the given information 
-def make_json_output(repos_response_list, eerste_item):
+def make_json_output(repo_name, laatste_commit):
     item_list = []
     item = {
-            "repository_name": repos_response_list["name"],
-            "last_submitted_commit": eerste_item
+            "repository_name": repo_name,
+            "last_submitted_commit": laatste_commit
         }
     item_list.append(item)
     item_list_json = json.dumps(item_list, sort_keys=False)
+    print(item_list_json)
     return item_list_json
 
 #return repositories and last commits from the repositories of the given github user
