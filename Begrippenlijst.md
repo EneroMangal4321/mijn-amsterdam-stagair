@@ -64,3 +64,6 @@ Toegangs Makelaar Amsterdam zorgt ervoor dat wij als amsterdammers kunnen inlogg
 
 #### Response Headers
 De Response Headers laat informatie zien over over wat de server voor data terugstuurt naar de pagina.
+
+#### Single Page Application
+Een SPA is een webapplicatie die op een pagina kan draaien, met als doel de gebruiker een snelle ervaring te geven. Deze webapplicaties lijken op computerprogramma's.
