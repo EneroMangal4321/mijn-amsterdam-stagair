@@ -4,7 +4,8 @@ import requests
 app = Flask(__name__)
 
 @app.route("/")
-def check_for_user():
+# check if the user exists and if he has any repositories
+def check_for_user_and_repo():
     username = get_username()
     repo_output_dict = get_repositories(username)
     repos_response = repo_output_dict["repos_response"]
@@ -12,20 +13,21 @@ def check_for_user():
     repos_response_list = repo_output_dict["repos_response_list"]
 
     if repos_response_list == []:
-        geen_repo = f"Deze gebruiker heeft geen repositories"
-        return geen_repo
-
+        no_repo = f"Deze gebruiker heeft geen repositories"
+        return no_repo
+  
     if repos_response.status_code == 200:
         return show_repos_and_last_commit(repos_response_list)
     return f"FAIL: {repos_response.status_code} {repos_response.content}. Vul een geldige gebruiker in."
 
+# call functions and looping trough te repo's and last commits of the user
 def show_repos_and_last_commit(repos_response_list):
     username = get_username()
     item_list = []
     for x in repos_response_list:
         naam_repo = x["name"]
-        laatste_commit = get_last_commit(naam_repo, username)
-        item = make_dict(naam_repo, laatste_commit)
+        last_commit = get_last_commit(naam_repo, username)
+        item = make_dict(naam_repo, last_commit)
         item_list.append(item)
     return output(item_list)
 
@@ -49,30 +51,17 @@ def get_last_commit(repo_name, username):
     commit_response_list = commit_response.json()
     print("dit is", commit_response_list)
     if commit_response.status_code == 200:
-        laatste_commit = commit_response_list[0]['commit']['message']
-        return laatste_commit
-    else:
-        laatste_commit = f"Deze repository heeft geen commits"
-        return laatste_commit
-    # if commit_response_list:
-    #     print("hallo", commit_response_list)
-    #     laatste_commit = commit_response_list[0]['commit']['message']
-    # elif commit_response_list != True:
-    #     laatste_commit = "Deze repo heeft geen commits."
-
-    
-    
-
+        last_commit = commit_response_list[0]['commit']['message']
+        return last_commit
 #create a dict from the given information 
-def make_dict(repo_name, laatste_commit):
+def make_dict(repo_name, last_commit):
 
     item = {
             "repository_name": repo_name,
-            "last_submitted_commit": laatste_commit
+            "last_submitted_commit": last_commit
         }
     
     return item
-
 
 def output(item_list):
     return jsonify(item_list)
