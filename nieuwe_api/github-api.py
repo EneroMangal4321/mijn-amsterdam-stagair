@@ -13,7 +13,7 @@ def check_for_user():
 
     if repos_response.status_code == 200:
         return show_repos_and_last_commit(repos_response_list)
-    return f"FAIL: {repos_response.status_code}. Vul een geldige gebruiker in."
+    return f"FAIL: {repos_response.status_code} {repos_response.content}. Vul een geldige gebruiker in."
 
 def show_repos_and_last_commit(repos_response_list):
     username = get_username()
@@ -44,12 +44,19 @@ def get_last_commit(repo_name, username):
     commit_response = requests.get(commit_url)
     commit_response_list = commit_response.json()
     print("dit is", commit_response_list)
-    if commit_response_list:
+    if commit_response.status_code == 200:
         laatste_commit = commit_response_list[0]['commit']['message']
+        return laatste_commit
     else:
-        laatste_commit = "Deze repo heeft geen commits."
+        laatste_commit = f"Deze repository heeft geen commits"
+        return laatste_commit
+    # if commit_response_list:
+    #     print("hallo", commit_response_list)
+    #     laatste_commit = commit_response_list[0]['commit']['message']
+    # elif commit_response_list != True:
+    #     laatste_commit = "Deze repo heeft geen commits."
 
-    return laatste_commit
+    
     
 
 #create a dict from the given information 
