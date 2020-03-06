@@ -11,6 +11,10 @@ def check_for_user():
     repos_url = repo_output_dict["repos_url"]
     repos_response_list = repo_output_dict["repos_response_list"]
 
+    if repos_response_list == []:
+        geen_repo = f"Deze gebruiker heeft geen repositories"
+        return geen_repo
+
     if repos_response.status_code == 200:
         return show_repos_and_last_commit(repos_response_list)
     return f"FAIL: {repos_response.status_code} {repos_response.content}. Vul een geldige gebruiker in."
