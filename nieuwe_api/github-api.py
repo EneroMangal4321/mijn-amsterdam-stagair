@@ -48,7 +48,7 @@ def get_last_commit(repo_name, username):
     commit_url = "https://api.github.com/repos/%s/%s/commits" % (username, repo_name)
     commit_response = requests.get(commit_url)
     commit_response_list = commit_response.json()
-    print("dit is", commit_response_list)
+    
     if commit_response.status_code == 200:
         last_commit = commit_response_list[0]['commit']['message']
         return last_commit
