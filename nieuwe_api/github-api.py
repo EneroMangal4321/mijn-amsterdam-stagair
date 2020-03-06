@@ -7,10 +7,10 @@ app = Flask(__name__)
 # check if the user exists and if he has any repositories
 def check_for_user_and_repo():
     username = get_username()
-    repo_output_dict = get_repositories(username)
-    repos_response = repo_output_dict["repos_response"]
-    repos_url = repo_output_dict["repos_url"]
-    repos_response_list = repo_output_dict["repos_response_list"]
+    repo_output = get_repositories(username)
+    repos_response = repo_output["repos_response"]
+    repos_url = repo_output["repos_url"]
+    repos_response_list = repo_output["repos_response_list"]
 
     if repos_response_list == []:
         no_repo = f"Deze gebruiker heeft geen repositories"
@@ -25,9 +25,9 @@ def show_repos_and_last_commit(repos_response_list):
     username = get_username()
     item_list = []
     for x in repos_response_list:
-        naam_repo = x["name"]
-        last_commit = get_last_commit(naam_repo, username)
-        item = make_dict(naam_repo, last_commit)
+        repo_name = x["name"]
+        last_commit = get_last_commit(repo_name, username)
+        item = make_dict(repo_name, last_commit)
         item_list.append(item)
     return output(item_list)
 
