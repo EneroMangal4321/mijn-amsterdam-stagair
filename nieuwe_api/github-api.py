@@ -9,7 +9,6 @@ def check_for_user_and_repo():
     username = get_username()
     repo_output = get_repositories(username)
     repos_response = repo_output["repos_response"]
-    repos_url = repo_output["repos_url"]
     repos_response_list = repo_output["repos_response_list"]
 
     if repos_response_list == []:
@@ -42,7 +41,7 @@ def get_repositories(username):
     repos_response = requests.get(repos_url)
 
     repos_response_list = repos_response.json()
-    return {"repos_response_list" : repos_response_list, "repos_response" : repos_response, "repos_url" : repos_url}
+    return {"repos_response_list" : repos_response_list, "repos_response" : repos_response}
 
 #get the last commit from the given repository
 def get_last_commit(repo_name, username):
