@@ -3,7 +3,7 @@ We willen een plek maken op Mijn Amsterdam genoemd Persoonlijke Inkomens Omgevin
 
 # Wat moet er gemaakt worden in de Back-End
 * Er moeten files worden gemaakt met tips en regels erin.
-* Er moeten functies komen die deze tips, regels toepassen en doorgeven aan de front end waar nodig.
+* Er moeten functies komen die deze regels toepassen op de tips en deze doorgeven aan de front end waar nodig is.
 * Ook moeten er tests worden geschreven om te checken of het allemaal werkt.
 
 # Benodigdheden
@@ -11,6 +11,11 @@ We willen een plek maken op Mijn Amsterdam genoemd Persoonlijke Inkomens Omgevin
 * Welke tips zijn er
 * Wat zijn de regels van de tips
 * gebruik van libraries
+* design :
+    1. hoe gaat het er uit zien 
+    2. wat moet waar komen
+* API
+* front end
 ### Tools
 * Editor
 * browser 
@@ -28,4 +33,3 @@ We willen een plek maken op Mijn Amsterdam genoemd Persoonlijke Inkomens Omgevin
 Deze als voorbeeld maar er zijn er nog meer.
 * command prompt 
 * GitHub
-
