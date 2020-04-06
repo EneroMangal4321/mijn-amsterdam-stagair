@@ -37,6 +37,7 @@ We willen een plek maken op Mijn Amsterdam genaamd Persoonlijke Inkomens Omgevin
     8. Flask
     9. connexion
     10. PyYAML
+    
 Deze als voorbeeld maar er zijn er nog meer.
 * command prompt 
 * GitHub
