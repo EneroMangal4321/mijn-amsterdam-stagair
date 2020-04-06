@@ -21,7 +21,10 @@ We willen een plek maken op Mijn Amsterdam genaamd Persoonlijke Inkomens Omgevin
     2. wat moet waar komen
 * API
     1. uit verschillende databases persoonlijke gegevens ophalen van andere instellingen.
+    2. de juiste gegevens ophalen uit de database.
 * front end
+    1. welke informatie moet je doorgeven.
+    2. waar moet je deze info doorgeven.
 
 ### Tools
 
