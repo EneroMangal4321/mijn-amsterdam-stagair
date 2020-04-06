@@ -20,6 +20,7 @@ We willen een plek maken op Mijn Amsterdam genaamd Persoonlijke Inkomens Omgevin
     1. hoe gaat het er uit zien 
     2. wat moet waar komen
 * API
+    1. uit verschillende databases persoonlijke gegevens ophalen van andere instellingen.
 * front end
 
 ### Tools
@@ -37,7 +38,7 @@ We willen een plek maken op Mijn Amsterdam genaamd Persoonlijke Inkomens Omgevin
     8. Flask
     9. connexion
     10. PyYAML
-    
+
 Deze als voorbeeld maar er zijn er nog meer.
 * command prompt 
 * GitHub
