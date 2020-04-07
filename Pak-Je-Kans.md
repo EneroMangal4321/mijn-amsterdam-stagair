@@ -1,6 +1,6 @@
 # Wat wordt er gemaakt
 ---
-We willen een plek maken op Mijn Amsterdam genaamd Persoonlijke Inkomens Omgeving, hier kunnen mensen persoonlijke tips zien die te maken hebben met geld. Deze tips worden zo persoonlijk mogelijk afgestemd met de informatie die we krijgen van de gebruiker, als de gebruiker accepteerd dat we zijn/haar gegevens mogen gebruiken om gepersonliseerde tips te laten zien. Het doel van deze omgeving is ervoor zorgen dat de burger beter zicht heeft op wat ze allemaal recht hebben. De burgers kunnen het ook direct aanvragen.
+We willen een plek maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningencheck, hier kunnen mensen persoonlijke tips zien die te maken hebben met geld. Deze tips worden zo persoonlijk mogelijk afgestemd met de informatie die we krijgen van de gebruiker, als de gebruiker accepteerd dat we zijn/haar gegevens mogen gebruiken om gepersonliseerde tips te laten zien. Het doel van deze omgeving is ervoor zorgen dat de burger beter zicht heeft op wat ze allemaal recht hebben. De burgers kunnen het ook direct aanvragen.
 
 # Wat moet er gemaakt worden in de Back-End
 ---
