@@ -4,8 +4,8 @@ We willen een plek maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningenchec
 
 # Wat moet er gemaakt worden in de Back-End
 ---
-* Er moeten files worden gemaakt met tips en regels erin.
-* Er moeten functies komen die deze regels toepassen op de tips en deze doorgeven aan de front end waar nodig is.
+* Er moeten files worden gemaakt met voorzieningen en voorwaarden erin.
+* Er moeten functies komen die deze voorwaarden toepassen op de voorzieningen en deze doorgeven aan de front end waar nodig is.
 * Ook moeten er tests worden geschreven om te checken of het allemaal werkt.
 
 # Benodigdheden
@@ -13,16 +13,16 @@ We willen een plek maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningenchec
 
 ### informatie
 
-* Welke tips zijn er
-* Wat zijn de regels van de tips
-* gebruik van libraries
-* design :
+* Voorzieningen : Wigger
+    1. Welke voorzieningen zijn er
+    2. Wat zijn de voorwaarden van de voorzieningen
+* design : Bram
     1. hoe gaat het er uit zien 
     2. wat moet waar komen
-* API
+* API : Johan
     1. uit verschillende databases persoonlijke gegevens ophalen van andere instellingen.
     2. de juiste gegevens ophalen uit de database.
-* front end
+* front end : Tim
     1. welke informatie moet je doorgeven.
     2. waar moet je deze info doorgeven.
 
