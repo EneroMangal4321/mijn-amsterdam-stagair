@@ -1,11 +1,12 @@
 # Wat wordt er gemaakt
 ---
-We willen een plek maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningencheck, hier kunnen mensen zien waar ze recht op hebben. Deze armoedevoorzieningen worden zo persoonlijk mogelijk gefilterd. Dit doen we met de gegevens die we van de burger hebben en krijgen, als de burger toegeeft dat we zijn of haar egevens gebruiken om deze voorzieningen te laten zien. Het doel van deze omgeving is ervoor zorgen dat de burger beter zicht heeft op wat ze allemaal recht hebben. De burgers kunnen het ook direct aanvragen.
+We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningencheck, in deze omgeving kunnen mensen met een laag inkomen de voorzieningen zien waar ze recht op hebben. Deze voorzieningen worden zo persoonlijk mogelijk gefilterd. Dit doen we met de gegevens die we van de burger hebben en krijgen, als de burger toestemming geeft dat we zijn of haar egevens gebruiken om deze voorzieningen te laten zien. Ons doel met deze omgeving is de burger inzicht geven welke voorzieningen zij kunnen aanvragen. De burgers kunnen het ook direct aanvragen, dit kunnen zij doen door op een link te klikken die we meegeven.
 
 # Wat moet er gemaakt worden in de Back-End
 ---
 * Er moeten files worden gemaakt met voorzieningen en voorwaarden erin.
 * Er moeten functies komen die deze voorwaarden toepassen op de voorzieningen en deze doorgeven aan de front end waar nodig is.
+* Er moet een docker container worden gemaakt.
 * Ook moeten er tests worden geschreven om te checken of het allemaal werkt.
 
 # Benodigdheden
@@ -17,14 +18,13 @@ We willen een plek maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningenchec
     1. Welke voorzieningen zijn er
     2. Wat zijn de voorwaarden van de voorzieningen
 * design : Bram
-    1. hoe gaat het er uit zien 
-    2. wat moet waar komen
-* API : Johan
-    1. uit verschillende databases persoonlijke gegevens ophalen van andere instellingen.
-    2. de juiste gegevens ophalen uit de database.
+    1. Hoe gaat het er uit zien 
+    2. Hat moet waar komen
+* Rule engine : Johan
+    1. De rule engine gebruiken om deze voorzieningen te tonen.
 * front end : Tim
-    1. welke informatie moet je doorgeven.
-    2. waar moet je deze info doorgeven.
+    1. Welke informatie moet je doorgeven aan de front end om ervoor te zorgen dat elke voorziening op de goeie plaats komt te staan met de juiste tekst en linkjes erin.
+    2. Waar moet je deze info doorgeven.
 
 ### Tools
 
