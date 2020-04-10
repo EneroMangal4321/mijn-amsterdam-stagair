@@ -17,20 +17,20 @@ We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningen
 * Voorzieningen : Wigger
     1. Welke voorzieningen zijn er
     2. Wat zijn de voorwaarden van de voorzieningen
-* design : Bram
+* Design : Bram
     1. Hoe gaat het er uit zien 
     2. Hat moet waar komen
 * Rule engine : Johan
     1. De rule engine gebruiken om deze voorzieningen te tonen.
-* front end : Tim
+* Front end : Tim
     1. Welke informatie moet je doorgeven aan de front end om ervoor te zorgen dat elke voorziening op de goeie plaats komt te staan met de juiste tekst en linkjes erin.
     2. Waar moet je deze info doorgeven.
 
 ### Tools
 
 * Editor
-* browser 
-* python libraries
+* Browser 
+* Python libraries
     1. objectpath
     2. os
     3. unittest
@@ -43,5 +43,5 @@ We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningen
     10. PyYAML
 
 Deze als voorbeeld maar er zijn er nog meer.
-* command prompt 
+* Command prompt 
 * GitHub
