@@ -15,16 +15,17 @@ We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningen
 ### informatie
 
 * Voorzieningen : Wigger
-    1. Welke voorzieningen zijn er
-    2. Wat zijn de voorwaarden van de voorzieningen
+    1. Welke voorzieningen zijn er.
+    2. Wat zijn de voorwaarden van de voorzieningen.
 * Design : Bram
-    1. Hoe gaat het er uit zien 
-    2. Hat moet waar komen
+    1. Hoe gaat het er uit zien.
+    2. Wat moet waar komen te staan.
 * Rule engine : Johan
-    1. De rule engine gebruiken om deze voorzieningen te tonen.
+    1. Verzamelen en organiseren van data voor rules, bepalen van voorwaarden zodat de rules gefilterd kunnen worden.
+    2. De rule engine gebruiken om deze voorzieningen te tonen.
 * Front end : Tim
     1. Welke informatie moet je doorgeven aan de front end om ervoor te zorgen dat elke voorziening op de goeie plaats komt te staan met de juiste tekst en linkjes erin.
-    2. Waar moet je deze info doorgeven.
+    2. Hoe moet je deze informatie noemen, zodat het op de goed gefilterd kan worden.
 
 ### Tools
 
