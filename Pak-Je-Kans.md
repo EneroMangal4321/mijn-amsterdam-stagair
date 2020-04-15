@@ -27,6 +27,8 @@ We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningen
 * Rule engine : Johan
     1. Verzamelen en organiseren van data voor rules, bepalen van voorwaarden zodat de rules gefilterd kunnen worden.
     2. De rule engine gebruiken om deze voorzieningen te tonen.
+* Rule file : Enero
+    1. Alle rules in een JSON file zetten, met de regels erbij zetten.
 * Front end : Tim
     1. Welke informatie moet je doorgeven aan de front end om ervoor te zorgen dat elke voorziening op de goeie plaats komt te staan met de juiste tekst en linkjes erin.
     2. Hoe moet je deze informatie noemen, zodat het op de goed gefilterd kan worden.
