@@ -8,6 +8,10 @@ We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningen
 * Er moeten functies komen die deze voorwaarden toepassen op de voorzieningen en deze doorgeven aan de front end waar nodig is.
 * Er moet een docker container worden gemaakt.
 * Ook moeten er tests worden geschreven om te checken of het allemaal werkt.
+* Certificaten om te checken of het veilig is.
+* jenkins file voor Build en Deploy.
+* Kibana en Sentry logging views op de NUC.
+* Netwerkconnectiviteit + bijbehorende env variabelen om connectie te maken met de bron api.
 
 # Benodigdheden
 ---
@@ -18,7 +22,7 @@ We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningen
     1. Welke voorzieningen zijn er.
     2. Wat zijn de voorwaarden van de voorzieningen.
 * Design : Bram
-    1. Hoe gaat het er uit zien.
+    1. Hoe gaat het er algemeen uit komen te zien.
     2. Wat moet waar komen te staan.
 * Rule engine : Johan
     1. Verzamelen en organiseren van data voor rules, bepalen van voorwaarden zodat de rules gefilterd kunnen worden.
@@ -27,7 +31,7 @@ We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningen
     1. Welke informatie moet je doorgeven aan de front end om ervoor te zorgen dat elke voorziening op de goeie plaats komt te staan met de juiste tekst en linkjes erin.
     2. Hoe moet je deze informatie noemen, zodat het op de goed gefilterd kan worden.
 
-### Tools
+### Tools 
 
 * Editor
 * Browser 
