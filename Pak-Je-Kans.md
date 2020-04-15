@@ -1,6 +1,6 @@
 # Inleiding
 ---
-In dit bestand ga ik uitleggen wat er gemaakt moet worden. Ook ga ik beschrijven wat dit betekend voor  de back end.
+In dit bestand ga ik uitleggen wat er gemaakt moet worden. Ook ga ik beschrijven wat dit betekend voor de back end. Ik zal ook de benodigdheden zoals informatie en tools die handig zijn noemen en beschrijven. Zo kan ik het PIO project beter inzien.
 
 # Wat wordt er gemaakt
 ---
