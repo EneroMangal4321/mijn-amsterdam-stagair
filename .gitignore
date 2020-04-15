@@ -131,3 +131,5 @@ dmypy.json
 .vscode/
 .idea/
 .docx/
+Pak-Je-Kans.docx
+*.docx
