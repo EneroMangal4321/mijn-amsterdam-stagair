@@ -1,3 +1,7 @@
+# Inleiding
+---
+In dit bestand ga ik uitleggen wat er gemaakt moet worden. Ook ga ik beschrijven wat dit betekend voor  de back end.
+
 # Wat wordt er gemaakt
 ---
 We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningencheck, in deze omgeving kunnen mensen met een laag inkomen de persoonlijke voorzieningen zien waar ze recht op hebben. Deze voorzieningen worden zo persoonlijk mogelijk gefilterd. Dit doen we met de gegevens die we van de burger hebben en krijgen, als de burger toestemming geeft dat we zijn of haar gegevens gebruiken om deze voorzieningen te laten zien. Ons doel met deze omgeving is de burger inzicht geven welke voorzieningen zij kunnen aanvragen. De burgers kunnen het ook direct aanvragen, dit kunnen zij doen door op een link te klikken die we meegeven.
