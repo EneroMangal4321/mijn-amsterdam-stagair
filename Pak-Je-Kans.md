@@ -1,17 +1,13 @@
 # Wat wordt er gemaakt
 ---
-We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningencheck, in deze omgeving kunnen mensen met een laag inkomen de voorzieningen zien waar ze recht op hebben. Deze voorzieningen worden zo persoonlijk mogelijk gefilterd. Dit doen we met de gegevens die we van de burger hebben en krijgen, als de burger toestemming geeft dat we zijn of haar egevens gebruiken om deze voorzieningen te laten zien. Ons doel met deze omgeving is de burger inzicht geven welke voorzieningen zij kunnen aanvragen. De burgers kunnen het ook direct aanvragen, dit kunnen zij doen door op een link te klikken die we meegeven.
+We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningencheck, in deze omgeving kunnen mensen met een laag inkomen de persoonlijke voorzieningen zien waar ze recht op hebben. Deze voorzieningen worden zo persoonlijk mogelijk gefilterd. Dit doen we met de gegevens die we van de burger hebben en krijgen, als de burger toestemming geeft dat we zijn of haar gegevens gebruiken om deze voorzieningen te laten zien. Ons doel met deze omgeving is de burger inzicht geven welke voorzieningen zij kunnen aanvragen. De burgers kunnen het ook direct aanvragen, dit kunnen zij doen door op een link te klikken die we meegeven.
 
 # Wat moet er gemaakt worden in de Back-End
 ---
-* Er moeten files worden gemaakt met voorzieningen en voorwaarden erin.
+* Er moeten files worden gemaakt met voorzieningen en voorwaarden van deze voorzieningen erin.
 * Er moeten functies komen die deze voorwaarden toepassen op de voorzieningen en deze doorgeven aan de front end waar nodig is.
-* Er moet een docker container worden gemaakt.
 * Ook moeten er tests worden geschreven om te checken of het allemaal werkt.
-* Certificaten om te checken of het veilig is.
-* jenkins file voor Build en Deploy.
-* Kibana en Sentry logging views op de NUC.
-* Netwerkconnectiviteit + bijbehorende env variabelen om connectie te maken met de bron api.
+* Certificaten om te checken of de security in orde is.
 
 # Benodigdheden
 ---
@@ -35,19 +31,13 @@ We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningen
 
 ### Tools 
 
-* Editor
-* Browser 
+* Editor (Visual Studio Code)
+* Browser (gebruikt om info op te zoeken)
 * Python libraries
-    1. objectpath
-    2. os
-    3. unittest
-    4. blinker
-    5. urllib3
-    6. Werkzeug
-    7. python-dateutil
-    8. Flask
-    9. connexion
-    10. PyYAML
+    1. objectpath (Wordt gebruikt om regels in een string te zetten)
+    2. os (Wordt gebruikt om met directories te werken)
+    3. unittest (Wordt gebruikt om tests uit te voeren)
+    4. Flask (Is een framework voor Python)
 
 Deze als voorbeeld maar er zijn er nog meer.
 * Command prompt 
