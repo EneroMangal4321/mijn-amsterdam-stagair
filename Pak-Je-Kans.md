@@ -1,6 +1,6 @@
 # Inleiding
 ---
-In dit bestand ga ik uitleggen wat er gemaakt moet worden. Ook ga ik beschrijven wat dit betekend voor de back end. Ik zal ook de benodigdheden zoals informatie en tools die handig zijn noemen en beschrijven. Zo kan ik het PIO project beter inzien.
+In dit bestand ga ik uitleggen wat er gemaakt moet worden. Ook ga ik beschrijven wat dit betekend voor de back end. Ik zal ook de benodigdheden zoals informatie en tools die handig zijn noemen en beschrijven. Zo kan ik het Persoonlijke Inkomens Omgeving project beter inzien.
 
 # Wat wordt er gemaakt
 ---
@@ -41,7 +41,7 @@ In dit bestand ga ik uitleggen wat er gemaakt moet worden. Ook ga ik beschrijven
     1. objectpath (Wordt gebruikt om regels in een string te zetten)
     2. os (Wordt gebruikt om met directories te werken)
     3. unittest (Wordt gebruikt om tests uit te voeren)
-    4. Flask (Is een framework voor Python)
+    4. Flask (Is een web-framework voor Python)
 
 Deze als voorbeeld maar er zijn er nog meer.
 * Command prompt 
