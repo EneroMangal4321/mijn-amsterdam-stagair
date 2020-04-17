@@ -4,13 +4,13 @@ In dit bestand ga ik uitleggen wat er gemaakt moet worden. Ook ga ik beschrijven
 
 # Wat wordt er gemaakt
 ---
-We willen een omgeving maken op Mijn Amsterdam genaamd Pak Je Kans voorzieningencheck, in deze omgeving kunnen mensen met een laag inkomen de persoonlijke voorzieningen zien waar ze recht op hebben. Deze voorzieningen worden zo persoonlijk mogelijk gefilterd. Dit doen we met de gegevens die we van de burger hebben en krijgen, als de burger toestemming geeft dat we zijn of haar gegevens gebruiken om deze voorzieningen te laten zien. Ons doel met deze omgeving is de burger inzicht geven welke voorzieningen zij kunnen aanvragen. De burgers kunnen het ook direct aanvragen, dit kunnen zij doen door op een link te klikken die we meegeven.
+ De Pak Je Kans Voorzieningencheck is een functionaliteit op Mijn Amsterdam, welke nog in ontwikkeling is. In deze omgeving kunnen mensen met een laag inkomen de persoonlijke voorzieningen zien waar ze recht op hebben. Deze voorzieningen worden zo persoonlijk mogelijk gefilterd. Dit doen we met de gegevens die we van de burger hebben en krijgen, als de burger toestemming geeft dat we zijn of haar gegevens gebruiken om deze voorzieningen te laten zien. Ons doel met deze omgeving is de burger inzicht geven welke voorzieningen zij kunnen aanvragen. De burgers kunnen het ook direct aanvragen, dit kunnen zij doen door op een link te klikken die we meegeven.
 
-# Wat moet er gemaakt worden in de Back-End
+# Beschrijving van de Back-End
 ---
-* Er moeten files worden gemaakt met voorzieningen en voorwaarden van deze voorzieningen erin.
-* Er moeten functies komen die deze voorwaarden toepassen op de voorzieningen en deze doorgeven aan de front end waar nodig is.
-* Ook moeten er tests worden geschreven om te checken of het allemaal werkt.
+* Files met een beschrijving van de voorziening en de bijbehorende voorwaarden.
+* Functies die deze voorwaarden toepassen op de voorzieningen en deze doorgeven aan de front end waar nodig is.
+* Tests om te checken of het allemaal werkt.
 * Certificaten om te checken of de security in orde is.
 
 # Benodigdheden
