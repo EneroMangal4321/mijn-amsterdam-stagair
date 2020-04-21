@@ -4,7 +4,7 @@ In dit bestand ga ik uitleggen wat er gemaakt moet worden. Ook ga ik beschrijven
 
 # Wat wordt er gemaakt
 ---
- De Pak Je Kans Voorzieningencheck is een functionaliteit op Mijn Amsterdam, welke nog in ontwikkeling is. In deze omgeving kunnen mensen met een laag inkomen de persoonlijke voorzieningen zien waar ze recht op hebben. Deze voorzieningen worden zo persoonlijk mogelijk gefilterd. Dit doen we met de gegevens die we van de burger hebben en krijgen, als de burger toestemming geeft dat we zijn of haar gegevens gebruiken om deze voorzieningen te laten zien. Ons doel met deze omgeving is de burger inzicht geven welke voorzieningen zij kunnen aanvragen. De burgers kunnen het ook direct aanvragen, dit kunnen zij doen door op een link te klikken die we meegeven.
+ De Pak Je Kans Voorzieningencheck is een functionaliteit op Mijn Amsterdam, welke nog in ontwikkeling is. In deze omgeving kunnen mensen met een laag inkomen de persoonlijke voorzieningen zien waar ze mogelijk recht op hebben. Deze voorzieningen worden zo persoonlijk mogelijk gefilterd. Dit doen we met de gegevens die we van de burger hebben en krijgen, als de burger toestemming geeft dat we zijn of haar gegevens gebruiken om deze voorzieningen te laten zien. Ons doel met deze omgeving is de burger inzicht geven welke voorzieningen zij kunnen aanvragen. De burgers kunnen het ook direct aanvragen, dit kunnen zij doen door op een link te klikken die we meegeven.
 
 # Beschrijving van de Back-End
 ---
